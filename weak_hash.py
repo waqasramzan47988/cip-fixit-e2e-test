@@ -2,4 +2,4 @@ import hashlib
 
 
 def hash_password(password):
-    return hashlib.md5(password.encode()).hexdigest()
+    return hashlib.sha256(password.encode()).hexdigest()
